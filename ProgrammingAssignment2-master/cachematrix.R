@@ -32,6 +32,7 @@ cacheSolve <- function(x, ...) {
   #if have already taken inverse (ie m isnt null), output m
   m <- x$getinverse()
   if(!is.null(m)){
+    message("Getting cached matrix")
     return(m)
   }
   #code executes here if the inverse of matrix hasn't been computed 
